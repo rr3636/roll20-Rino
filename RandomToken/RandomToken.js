@@ -5,12 +5,13 @@
 /*
  * This script sets the token display/graphics to an random image from an RollableTable with the same name
  *
- * version: 0.1
+ * version: 0.2
  *
  * To use:
  *	* Add this script to your API
  *	* Create an RollableTable (menu selection top to the right inside roll20: "Decks and Table")
  *		* Name this table something you would call a monster (example "Kobold"). "Note: case sensitive"
+ *			* Note: if you use Aaron's TokenNameNumber (?https://github.com/shdwjk/roll20-api-scripts), the monster's name can end in " %%NUMBERED%%" (that is space + "%%NUMBERED%%"). Example: name = "Kobold %%NUMBERED%%". Example: "Kobold %%NUMBERED%%"
  *		* Click "Add item" to add items in the table. Weight & name of this item is not used, so just leave as is.
  *		* You need to add an icon. So drag an image from your library here and click "save changes".
  *		* Repeat "Add item" as many times as you want.
@@ -19,6 +20,7 @@
  *	* Drag an icon to the map from your library.
  *		* left click this icon and click the settings icon for it (the one down to left of it)
  *		* set the "Name" field to the exact name you used in the table (example "Kobold"). "Note: case sensitive"
+ *			* Note: if you use Aaron's TokenNameNumber, the table name should not have "%%NUMBERED%%". Example: table name = "Kobold"
  *		* Optionally fill out other fields here (example: "Represents character").
  *		* Click "save changes" when finished
  *	* When this token is still selected, go to your "Journal" (menu top right)
@@ -58,6 +60,12 @@ on("change:token", function(obj, prev) {
     //Exit if name is set to blank
     if(objName == "")
         return;
+
+    //Support for Aaron's script "TokenNameNumber" (https://github.com/shdwjk/roll20-api-scripts)
+    if(objName.length > 13){
+        if(objName.substring(objName.length -13) == " %%NUMBERED%%")
+            var objName = objName.substring(0, objName.length -13);
+    }
 
     //Check if theres an RollableTable with the same Name we just extracted. Exit if it's not found
     var rollableTableObj = findObjs({_type : "rollabletable", name : objName})[0];
