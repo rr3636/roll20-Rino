@@ -1,0 +1,14 @@
+{
+  "name": "RandomToken",
+  "version": "0.1",
+  "description": "Randomly sets token image from an Rollabletable with the same name as the token.",
+  "authors": "Rino",
+  "roll20userid": "799859",
+  "dependencies": {
+  },
+  "modifies": {
+	"token imgsrc": "write"
+  },
+  "conflicts": [
+  ]
+}
