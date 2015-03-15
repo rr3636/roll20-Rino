@@ -5,6 +5,8 @@
 /*
  * This script sets the token display/graphics to an random image from an RollableTable with the same name
  *
+ * version: 0.1
+ *
  * To use:
  *	* Add this script to your API
  *	* Create an RollableTable (menu selection top to the right inside roll20: "Decks and Table")
