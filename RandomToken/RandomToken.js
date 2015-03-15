@@ -11,7 +11,7 @@
  *	* Add this script to your API
  *	* Create an RollableTable (menu selection top to the right inside roll20: "Decks and Table")
  *		* Name this table something you would call a monster (example "Kobold"). "Note: case sensitive"
- *			* Note: if you use Aaron's TokenNameNumber (?https://github.com/shdwjk/roll20-api-scripts), the monster's name can end in " %%NUMBERED%%" (that is space + "%%NUMBERED%%"). Example: name = "Kobold %%NUMBERED%%". Example: "Kobold %%NUMBERED%%"
+ *			* Note: if you use Aaron's TokenNameNumber (https://github.com/shdwjk/roll20-api-scripts), the monster's name can end in " %%NUMBERED%%" (that is space + "%%NUMBERED%%"). Example: name = "Kobold %%NUMBERED%%". Example: "Kobold %%NUMBERED%%"
  *		* Click "Add item" to add items in the table. Weight & name of this item is not used, so just leave as is.
  *		* You need to add an icon. So drag an image from your library here and click "save changes".
  *		* Repeat "Add item" as many times as you want.
