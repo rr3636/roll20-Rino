@@ -1,6 +1,6 @@
 {
   "name": "RandomToken",
-  "version": "0.2",
+  "version": "0.21",
   "description": "Randomly sets token image from an Rollabletable with the same name as the token.",
   "authors": "Rino",
   "roll20userid": "799859",

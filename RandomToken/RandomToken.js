@@ -1,11 +1,11 @@
-// Github:   
+// Github:   https://github.com/rr3636/roll20-Rino
 // By:       Rino
 // Contact:  https://app.roll20.net/users/799859/rino
 
 /*
  * This script sets the token display/graphics to an random image from an RollableTable with the same name
  *
- * version: 0.2
+ * version: 0.21
  *
  * To use:
  *	* Add this script to your API
