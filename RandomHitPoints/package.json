@@ -1,0 +1,14 @@
+{
+  "name": "RandomHitPoints",
+  "version": "0.1",
+  "description": "This script rolls the monsters Hit Dice (+any con) and sets this as it's Hit Points in one of the bubbles above the token",
+  "authors": "Rino",
+  "roll20userid": "799859",
+  "dependencies": {
+  },
+  "modifies": {
+	"token bar1_value, bar2_value, bar3_value, bar1_max, bar2_max, bar3_max": "write"
+  },
+  "conflicts": [
+  ]
+}
