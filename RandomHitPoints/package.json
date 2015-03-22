@@ -1,6 +1,6 @@
 {
   "name": "RandomHitPoints",
-  "version": "0.1",
+  "version": "0.4",
   "description": "This script rolls the monsters Hit Dice (+any con) and sets this as it's Hit Points in one of the bubbles above the token",
   "authors": "Rino",
   "roll20userid": "799859",
